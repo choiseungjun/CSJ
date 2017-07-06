@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>아프니벤큐 A시안</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=medium-dpi" />
+<link rel="stylesheet" href="css/default.css" />
+<link rel="stylesheet" href="css/style.css" />
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="../js/html5.js"></script>
+	<script type="text/javascript" src="../js/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/toggle.js"></script>
+
+<script>
+(function($){
+	$(document)
+		.ready(function(){
+
+		})
+		.on('click','.gnb ul li a',function(){
+			var $index = $(this).parents('li').index()+1,
+				 $selector = $('.sec' + $index),
+				 $offset = $selector.offset().top;
+			$('html, body').stop().animate({scrollTop : $offset}, 400);
+		})
+})(jQuery);
+</script>
+
+</head>
+
+<body>
+	<div class="wrapM">
+		<div class="contents">
+			<nav class="gnb">
+				<ul>
+					<li><a href="#none">아픈입엔?</a></li>
+					<li><a href="#none">이런분에게</a></li>
+					<li><a href="#none">치료하세요</a></li>
+					<li><a href="#none">광고보기</a></li>
+				</ul>
+			</nav>
+			<div class="sec1">
+				<div class="benq_logo"><a href="#none"><img src="images/mobile/benq_logo.png" alt="아프니벤큐 액" /></a></div>
+				<div class="kolon_logo"><a href="#none"><img src="images/mobile/kolon_logo.png" alt="코오롱제약" /></a></div>
+				<img src="images/mobile/img_content1.jpg" alt="아픈입엔! 아프니벤큐액 (디클로페낙)">
+			</div>
+			<div class="sec2">
+				<img src="images/mobile/test1.jpg" alt="">
+			</div>
+			<div class="sec3">
+				<img src="images/mobile/test2.jpg" alt="">
+			</div>
+			<div class="sec4">
+				<img src="images/mobile/test1.jpg" alt="">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
