@@ -1,0 +1,30 @@
+@charset "utf-8";
+/*-----------------------------------------------------------------------------------
+	HTML Elements Default Properties
+	version :1.0
+	author : Choi Seung Jun
+-----------------------------------------------------------------------------------*/
+/* -------- 웹폰트 설정 -------- */
+@font-face {
+    font-family: 'NanumSquareR';
+	src:local('※');  /* 생략 가능 */ 
+    src: url('font/NanumSquareR.eot'); /* ie6~8 */
+    src: url('font/NanumSquareR.eot?#iefix') format('embedded-opentype'), /* ie6~8 */
+         url('font/NanumSquareR.woff') format('woff'),  /* ie9, Chrom, safari, opera, firefox */
+         url('font/NanumSquareR.ttf') format('truetype');  /* ie9, Chrom, safari, opera, firefox */
+}
+
+/* = Reset
+-----------------------------------------------------------------------------------*/
+body, h1, h2, h3, h4, ul, p, hr {margin:0px; padding:0px;}
+body{font-family:"NanumSquareR","나눔스퀘어",dotum,"돋움",sans-serif,'Arial'; font-size:13px; font-weight:normal; color:#666; line-height:1.4; word-break:break-all; -ms-word-break:break-all; -webkit-text-size-adjust:none}/* -webkit-text-size-adjust:none 안드로이드폰에서 모바일을 회전시켜 가로 너비가 달라질때 마다 텍스트 크기도 달라지는 것을 방지 */
+h1, h2, h3, h4{font-size:100%; font-weight:normal;}
+ul,ol,dl,li{list-style:none;}
+a{text-decoration:none;}
+a:link, a:visited, a:hover, a:active{color:#404040;}
+img{border:0px;height:auto; vertical-align:top;}/* img,video,object,embed 사용시에는 부모보다 크기가 크지 않도록 반드시 제어한다 */
+i,em,address{font-style:normal;}
+hr{width:0px;height:0px;overflow:hidden;position:absolute;top:0px;left:-9999px;visibility:hidden;}
+header, nav, section, article, footer{display:block;}
+button{display: inline-block; margin:0; padding:0; background:none; border:none; text-align:center; vertical-align:middle; white-space:nowrap; cursor: pointer;}
+
